@@ -5,11 +5,10 @@ import scalablocks.model.block.`type`.BlockType
 
 class BlockBuilder {
 
-  private var blockType: BlockType = null
+  private var blockType: BlockType = _
   private var fields: Seq[BlockField] = Seq()
   private var inputs: Seq[InputBlock] = Seq()
   private var statements: Seq[StatementBlock] = Seq()
-
 
   def withType(blockType: BlockType): BlockBuilder = {
     this.blockType = blockType
