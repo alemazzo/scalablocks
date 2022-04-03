@@ -4,13 +4,12 @@ import scalablocks.controller.output.OutputController
 import scalablocks.controller.toolbox.ToolboxController
 import scalablocks.controller.workspace.WorkspaceController
 import scalablocks.model.environment.Environment
-import scalablocks.model.output.Output
-import scalablocks.model.toolbox.Toolbox
-import scalablocks.model.workspace.Workspace
+import scalablocks.model.environment.output.Output
+import scalablocks.model.environment.toolbox.Toolbox
+import scalablocks.model.environment.workspace.Workspace
 
-trait ScalaBlockApp[W <: Workspace, T <: Toolbox, O <: Output] extends App {
-
-  val environment: Environment[W, T, O] = new Environment[W, T, O]
+abstract class ScalaBlockApp[W <: Workspace, T <: Toolbox, O <: Output]
+  (val environment: Environment[W, T, O]) extends App {
 
   /**
    * Get the output controller.
@@ -44,9 +43,10 @@ trait ScalaBlockApp[W <: Workspace, T <: Toolbox, O <: Output] extends App {
   //                                  Main                                    //
   //////////////////////////////////////////////////////////////////////////////
 
-  _outputController.initialize
-  _workspaceController.initialize
-  _toolboxController.initialize
+  workspaceController.initialize
+  toolboxController.initialize
+  outputController.initialize
+
   initialize()
   run()
 

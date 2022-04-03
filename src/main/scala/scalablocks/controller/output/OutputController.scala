@@ -1,7 +1,7 @@
 package scalablocks.controller.output
 
 import scalablocks.controller.ScalaBlockController
-import scalablocks.model.output.Output
+import scalablocks.model.environment.output.Output
 
 trait OutputController extends ScalaBlockController {
   private var output: Output = null

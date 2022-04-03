@@ -1,7 +1,7 @@
 package scalablocks.controller.toolbox
 
 import scalablocks.controller.ScalaBlockController
-import scalablocks.model.toolbox.Toolbox
+import scalablocks.model.environment.toolbox.Toolbox
 
 trait ToolboxController extends ScalaBlockController{
   private var toolbox: Toolbox = null
