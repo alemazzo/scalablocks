@@ -1,7 +1,5 @@
 package scalablocks.controller
 
 trait ScalaBlockController {
-
-  def initialize: Unit
-
+  def initialize(): Unit
 }
