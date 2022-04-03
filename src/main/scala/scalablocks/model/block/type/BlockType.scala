@@ -1,7 +1,7 @@
 package scalablocks.model.block.`type`
 
+import scalablocks.model.block.generator.order.Order
 import scalablocks.model.block.generator.{Generable, Generator}
-import scalablocks.model.block.order.Order
 
 
 trait BlockType extends Generable {

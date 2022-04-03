@@ -1,7 +1,7 @@
 package scalablocks.model.block.generator
 
 import scalablocks.model.block.Block
-import scalablocks.model.block.order.Order
+import scalablocks.model.block.generator.order.Order
 
 
 trait Generator {

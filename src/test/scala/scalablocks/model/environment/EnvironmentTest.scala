@@ -9,7 +9,7 @@ import scalablocks.model.environment.toolbox.console.ConsoleToolbox
 import scalablocks.model.environment.workspace.Workspace
 import scalablocks.model.environment.workspace.console.ConsoleWorkspace
 
-class EnvironmentTest extends AnyFlatSpec {
+final class EnvironmentTest extends AnyFlatSpec {
 
   val workspace = new ConsoleWorkspace(Seq())
   val toolbox = new ConsoleToolbox(Seq())
