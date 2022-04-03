@@ -42,6 +42,13 @@ trait ScalaBlockApp extends App {
    */
   def run(): Unit
 
+  //////////////////////////////////////////////////////////////////////////////
+  //                                  Main                                    //
+  //////////////////////////////////////////////////////////////////////////////
+
+  _outputController.initialize
+  _workspaceController.initialize
+  _toolboxController.initialize
   initialize()
   run()
 
