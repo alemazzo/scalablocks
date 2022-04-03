@@ -1,7 +1,9 @@
 package scalablocks.model.block.`type`
 
-import scalablocks.model.block.generator.order.Order
+import scalablocks.model.block.generator.order.Orders
+import scalablocks.model.block.generator.order.Orders.Order
 import scalablocks.model.block.generator.{Generable, Generator}
+
 
 
 trait BlockType extends Generable {
@@ -10,9 +12,9 @@ trait BlockType extends Generable {
 
   def order: Order
 
-  def fieldNames: Seq[String]
+  def fieldsNames: Seq[String]
 
-  def inputNames: Seq[String]
+  def inputsNames: Seq[String]
 
   def statementNames: Seq[String]
 
