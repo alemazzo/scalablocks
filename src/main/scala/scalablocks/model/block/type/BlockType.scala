@@ -1,9 +1,11 @@
 package scalablocks.model.block.`type`
 
-import scalablocks.model.block.generator.Generator
+import scalablocks.model.block.generator.{Generable, Generator}
 import scalablocks.model.block.order.Order
 
-trait BlockType {
+
+
+trait BlockType extends Generable {
 
   def name: String
 
@@ -16,8 +18,6 @@ trait BlockType {
   def statementNames: Seq[String]
 
   def hasReturn: Boolean
-
-  def generator: Generator
 
 }
 

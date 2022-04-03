@@ -1,7 +1,10 @@
 package scalablocks.model.block.generator
 
 import scalablocks.model.Block
+import scalablocks.model.block.order.Order
+
 
 trait Generator {
-  def generate(block: Block): String
+  type Code = (String, Order)
+  def generate(block: Block): Code
 }
