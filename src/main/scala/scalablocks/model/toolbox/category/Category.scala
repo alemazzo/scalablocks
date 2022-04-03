@@ -1,4 +1,4 @@
-package scalablocks.model.environment.toolbox.category
+package scalablocks.model.toolbox.category
 
 import scalablocks.model.block.`type`.BlockType
 

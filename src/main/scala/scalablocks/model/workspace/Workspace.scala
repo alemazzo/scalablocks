@@ -1,4 +1,4 @@
-package scalablocks.model.environment.workspace
+package scalablocks.model.workspace
 
 import scalablocks.model.block.Block
 

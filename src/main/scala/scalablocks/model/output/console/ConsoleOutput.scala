@@ -1,6 +1,6 @@
-package scalablocks.model.environment.output.console
+package scalablocks.model.output.console
 
-import scalablocks.model.environment.output.Output
+import scalablocks.model.output.Output
 
 class ConsoleOutput extends Output {
 

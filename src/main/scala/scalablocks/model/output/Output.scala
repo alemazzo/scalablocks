@@ -1,4 +1,4 @@
-package scalablocks.model.environment.output
+package scalablocks.model.output
 
 /**
  * Generic output class.

@@ -2,12 +2,12 @@ package scalablocks.model.environment
 
 import org.scalatest.flatspec.AnyFlatSpec
 import scalablocks.model.block.Block
-import scalablocks.model.environment.output.console.ConsoleOutput
-import scalablocks.model.environment.toolbox.Toolbox
-import scalablocks.model.environment.toolbox.category.Category
-import scalablocks.model.environment.toolbox.console.ConsoleToolbox
-import scalablocks.model.environment.workspace.Workspace
-import scalablocks.model.environment.workspace.console.ConsoleWorkspace
+import scalablocks.model.output.console.ConsoleOutput
+import scalablocks.model.toolbox.Toolbox
+import scalablocks.model.toolbox.category.Category
+import scalablocks.model.toolbox.console.ConsoleToolbox
+import scalablocks.model.workspace.Workspace
+import scalablocks.model.workspace.console.ConsoleWorkspace
 
 final class EnvironmentTest extends AnyFlatSpec {
 
