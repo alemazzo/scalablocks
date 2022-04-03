@@ -17,7 +17,7 @@ final class EnvironmentTest extends AnyFlatSpec {
 
   "An Environment" should "be created" in {
     val env = new Environment(workspace, toolbox, output)
-    assert(env.isInstanceOf[Environment[workspace.type, toolbox.type, output.type]])
+    assert(env.isInstanceOf[Environment[ConsoleWorkspace, ConsoleToolbox, ConsoleOutput]])
   }
 
   it should "have a workspace" in {
