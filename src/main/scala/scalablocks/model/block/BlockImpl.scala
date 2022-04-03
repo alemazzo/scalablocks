@@ -1,6 +1,5 @@
 package scalablocks.model.block
 
-import scalablocks.model.Block
 import scalablocks.model.block.`type`.BlockType
 
 abstract class BlockImpl(

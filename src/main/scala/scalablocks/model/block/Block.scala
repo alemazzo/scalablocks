@@ -1,8 +1,7 @@
-package scalablocks.model
+package scalablocks.model.block
 
 import scalablocks.model.block.`type`.BlockType
 import scalablocks.model.block.builder.BlockBuilder
-import scalablocks.model.block.{BlockField, InputBlock, StatementBlock}
 
 /**
  * Definition of a block.
